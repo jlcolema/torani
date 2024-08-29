@@ -1,0 +1,388 @@
+/* Variation 3 */
+
+/* Global */
+
+.ti12 {}
+
+/* Breadcrumbs */
+
+.ti12 .breadcrumb {
+	margin-left: 0;
+	padding: 0 73px;
+}
+
+@media (max-width: 768px) {
+	.ti12 .breadcrumb {
+		margin-top: 0;
+		padding: 0 17px;
+	}
+}
+
+/* Product Description */
+/* Move to be above the ingredients. */
+
+.ti12 .product-block.hide-on-mobile {}
+
+.ti12 .product_attributes {}
+
+	.ti12 .product_attributes__group {
+		width: 50%;
+	}
+
+	@media (max-width: 768px) {
+		.ti12 .product_attributes__group {
+			width: initial;
+		}
+	}
+
+		.ti12 .descriptioncont {
+			max-width: 406px;
+			margin: 0 auto;
+		}
+
+		@media (max-width: 768px) {}
+
+			.ti12 .descriptioncont h2 {
+				margin-bottom: 20px;
+				font-size: 1.5rem;
+				font-weight: 600;
+			}
+
+		.ti12 .ingredientscont {
+			width: initial;
+			max-width: 406px;
+			margin: 37px auto 0 auto;
+		}
+
+		@media (max-width: 768px) {}
+
+			.ti12 .ingredients {
+				max-width: none;
+				margin: 0;
+			}
+
+.ti12 .proddescription {
+	display: none;
+}
+
+/* Reviews */
+
+.ti12 .pr-review-snippet-container {}
+
+	.ti12 .pr-review-snippet-container .pr-snippet {}
+
+	@media (max-width: 768px) {
+		.ti12 .pr-review-snippet-container .pr-snippet {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+		.ti12 .pr-review-snippet-container .pr-snippet-stars-container {}
+
+		.ti12 .pr-review-snippet-container .pr-snippet-read-and-write {}
+
+		@media (max-width: 768px) {
+			.ti12 .pr-review-snippet-container .pr-snippet-read-and-write {
+				margin-top: 5px !important;
+			}
+		}
+
+			.ti12 .pr-review-snippet-container .pr-snippet-review-count {}
+
+			@media (max-width: 768px) {
+				.ti12 .pr-review-snippet-container .pr-snippet-review-count {
+					margin-right: 0 !important;
+				}
+			}
+
+			.ti12 .pr-review-snippet-container .pr-snippet-write-review-link {}
+
+			@media (max-width: 768px) {
+				.ti12 .pr-review-snippet-container .pr-snippet-write-review-link {
+					padding-left: 0 !important;
+				}
+			}
+
+/* Savings */
+/* Add to the right of the price. */
+
+.ti12 .product-block--price {}
+
+@media (max-width: 768px) {
+	.ti12 .product-block--price {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+	.ti12 .product__price-savings {}
+
+	.ti12 .product__price-savings:not(:empty) {
+		display: inline-block !important;
+		padding: 2px 10px;
+		font-size: 14px;
+		line-height: 16px;
+		color: #ffffff;
+		background: #213359;
+		opacity: 1 !important;
+	}
+
+	@media (max-width: 768px) {
+		.ti12 .product__price-savings:not(:empty) {
+			margin-top: 7px;
+			font-size: 12px;
+			line-height: 1.0833333333;
+		}
+	}
+
+/* Choose Your Size */
+/* Move options in to a dropdown. */
+
+.ti12 .product-block {}
+
+	.ti12 .variant-wrapper {
+		position: relative
+	}
+
+		.ti12 .variant__label {
+			margin-bottom: 8px !important;
+			font-size: 16px !important;
+			line-height: 1.0625;
+			font-weight: 700 !important;
+		}
+
+		/* Selected Size Option */
+
+		.ti12 .variant-input--selected-size {
+			position: relative;
+			padding: 10px 32px 10px 16px;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: left;
+			color: #213359;
+			border: 1px solid #213359;
+			cursor: pointer;
+		}
+
+		@media (max-width: 768px) {
+			.ti12 .variant-input--selected-size {
+				font-size: 14px;
+				line-height: 1.1428571429;
+			}
+		}
+
+		.ti12 .variant-input--selected-size.variant-input--out-of-stock {
+			color: #5a5a5a;
+			text-decoration: line-through;
+		}
+
+		.ti12 .variant-input--selected-size:after {
+			content: "";
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			width: 20px;
+			height: 20px;
+			margin-top: -10px;
+			background-image: url("https://storage.googleapis.com/images.trinity.one/WorldPantry/TOR-A-PDP-SelectorSavingsRestyle-V1-Sep2023/caret-down.svg");
+			background-size: 20px 20px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			z-index: 1;
+		}
+
+		.ti12 .variant-input--selected-size.variant-input-wrap--is-open {}
+
+		.ti12 .variant-input--selected-size.variant-input-wrap--is-open:after {
+			margin-top: -9px;
+			rotate: 180deg;
+		}
+
+			.ti12 .variant-input--selected-size .plus-packsize__label {
+				font-size: 16px;
+			}
+
+			.ti12 .variant-input--selected-size.variant-input--out-of-stock .plus-packsize__label {
+				color: #5a5a5a;
+			}
+
+			@media (max-width: 768px) {
+				.ti12 .variant-input--selected-size .plus-packsize__label {
+					font-size: 14px;
+					line-height: 1.1428571429;
+				}
+			}
+
+			.ti12 .variant-input--selected-size.variant-input-wrap--is-open .plus-packsize__label {}
+
+				.ti12 .variant-input--selected-size .plus-packsize__label span {}
+
+		/* Heading (for example: 750 ml Glass Bottle) */
+
+		.ti12 .glassplasticheader {
+			margin: 8px 16px 10px 16px;
+			padding: 10px 0 0 0;
+			font-size: 16px;
+			text-align: left;
+			border-top: 1px solid #213359;
+			border-bottom: none;
+		}
+
+		/* The first heading does not need extra spacing above it */
+
+		.ti12 .variant-input-wrap legend + .glassplasticheader,
+		.ti12 .variant-input-wrap legend + .variant-input .glassplasticheader {
+			margin-top: 0;
+		}
+
+		/* Grouped Options */
+
+		.ti12 .variant-input-wrap {
+			display: none;
+			position: absolute;
+			left: 0;
+			top: calc(100% - 1px);
+			width: 100%;
+			padding-bottom: 20px;
+			border: 1px solid #213359;
+			border-top: none;
+			background: #ffffff;
+			z-index: 3;
+		}
+
+		.ti12 .variant-input-wrap.variant-input-wrap--is-open {
+			display: flex;
+			flex-direction: column;
+		}
+
+			.ti12 .variant-input-wrap legend {}
+
+			/* Individual Option */
+
+			.ti12 div.variant-input {
+				display: block;
+				float: none;
+				width: 100%;
+				margin: 0;
+			}
+
+			.ti12 div.variant-input.formatgroup {
+				order: 2;
+			}
+
+			.ti12 div.variant-input.formatgroup1 {
+				order: 1;
+			}
+
+			.ti12 div.variant-input.formatgroup2 {
+				order: 2;
+			}
+
+				.ti12 div.variant-input input {}
+
+				.ti12 div.variant-input label {
+					display: block;
+					height: auto;
+					min-height: auto;
+					padding: 6px 16px 7px 16px;
+					font-weight: 500;
+					text-align: left;
+					color: #000000;
+					box-shadow: none;
+				}
+
+				@media (max-width: 768px) {
+					.ti12 div.variant-input label {
+						margin: 0;
+						font-size: 14px;
+						line-height: 1.1428571429;
+					}
+				}
+
+				.ti12 div.variant-input label:hover {
+					box-shadow: none;
+				}
+
+				.ti12 div.variant-input label.disabled {
+					color: #5a5a5a;
+					text-decoration: line-through;
+					opacity: 1;
+				}
+
+				.ti12 div.variant-input label.disabled:after {
+					content: none;
+				}
+
+				.ti12 div.variant-input input:checked + label {
+					font-weight: bold;
+					color: #000000;
+					background: #dddddd !important;
+					box-shadow: none;
+				}
+
+				.ti12 div.variant-input input:checked + label.disabled {
+					color: #5a5a5a;
+					opacity: 1;
+				}
+
+					.ti12 div.variant-input .plus-packsize__label {
+						font-size: 16px;
+						font-weight: 500;
+					}
+
+					.ti12 div.variant-input label.disabled .plus-packsize__label {
+						color: #5a5a5a
+					}
+
+						.ti12 div.variant-input .plus-packsize__label span {}
+
+						.ti12 div.variant-input input:checked + label span {
+							font-weight: bold;
+							color: #d7392e;
+						}
+
+						.ti12 div.variant-input input.disabled:checked + label span {
+							color: #5a5a5a;
+						}
+
+/* Frequency */
+
+.auto-delivery {
+	margin-bottom: 8px;
+	font-size: 16px;
+	line-height: 1.0625;
+	font-weight: 700;
+}
+
+.rc-container {
+	margin-bottom: 1.5em !important;
+}
+
+/* Quantity */
+
+.product__quantity {}
+
+	.product__quantity label {
+		margin-bottom: 8px !important;
+		font-size: 16px !important;
+		line-height: 1.0625;
+		font-weight: 700 !important;
+	}
+
+/* Product Availability */
+
+.product_availability_pdp {
+	padding-bottom: 6px;
+}
+
+/* Sold Out */
+
+.ti12 button.add-to-cart[disabled="disabled"],
+button.add-to-cart.disabled,
+.addtocartinline .qtyandaddtocartbuttoncont button.btn.btn--full.add-to-cart.action_button:disabled, .addtocartinline .qtyandaddtocartbuttoncont button.btn.btn--full.add-to-cart.action_button[disabled] {
+	color: #ffffff !important;
+	background-color: #808080 !important;
+}

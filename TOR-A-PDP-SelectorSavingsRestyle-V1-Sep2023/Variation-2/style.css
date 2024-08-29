@@ -1,0 +1,66 @@
+/* Variation 2 */
+
+/* Global */
+
+.ti12 {}
+
+/* Breadcrumbs */
+
+.ti12 .breadcrumb {
+	margin-left: 0;
+	padding: 0 73px;
+}
+
+@media (max-width: 768px) {
+	.ti12 .breadcrumb {
+		margin-top: 0;
+		padding: 0 17px;
+	}
+}
+
+/* Product Description */
+/* Move to be above the ingredients. */
+
+.ti12 .product-block.hide-on-mobile {}
+
+.ti12 .product_attributes {}
+
+	.ti12 .product_attributes__group {
+		width: 50%;
+	}
+
+	@media (max-width: 768px) {
+		.ti12 .product_attributes__group {
+			width: initial;
+		}
+	}
+
+		.ti12 .descriptioncont {
+			max-width: 406px;
+			margin: 0 auto;
+		}
+
+		@media (max-width: 768px) {}
+
+			.ti12 .descriptioncont h2 {
+				margin-bottom: 20px;
+				font-size: 1.5rem;
+				font-weight: 600;
+			}
+
+		.ti12 .ingredientscont {
+			width: initial;
+			max-width: 406px;
+			margin: 37px auto 0 auto;
+		}
+
+		@media (max-width: 768px) {}
+
+			.ti12 .ingredients {
+				max-width: none;
+				margin: 0;
+			}
+
+.ti12 .proddescription {
+	display: none;
+}
